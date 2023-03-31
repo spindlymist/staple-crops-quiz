@@ -1,0 +1,16 @@
+.CropList {
+    border-spacing: 0;
+    text-align: left;
+}
+
+.CropList th, .CropList td {
+    padding: 2px 6px;
+}
+
+.CropList th {
+    padding-bottom: 12px;
+}
+
+.CropList th:first-child, .CropList td:first-child {
+    text-align: right;
+}

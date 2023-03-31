@@ -1,0 +1,7 @@
+.EndgameMessage {
+    margin: 2rem 0;
+    border: none;
+    border-bottom: 1px solid transparent;
+    padding: .5rem 1rem;
+    text-align: center;
+}

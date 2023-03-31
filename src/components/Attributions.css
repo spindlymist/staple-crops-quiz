@@ -1,0 +1,8 @@
+.Attributions {
+    margin-top: 4rem;
+}
+
+.Attributions a:link, .Attributions a:visited {
+    color: lightgray;
+    text-decoration: none;
+}

@@ -1,0 +1,11 @@
+.CropInput {
+    margin: 2rem 0;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: .5rem 1rem;
+    transition: border-bottom .25s;
+}
+
+.CropInput:focus {
+    border-bottom-color: orange;
+}

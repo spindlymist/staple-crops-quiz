@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
+import { CropInput } from './components/CropInput';
+import { CropList } from './components/CropList';
+import { EndgameMessage } from './components/EndgameMessage';
+import { Attributions } from "./components/Attributions";
+import { useCrops } from './hooks/useCrops';
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Staple Crops Quiz"
+  }, []);
+
+  const isGameOver = useCrops(state => state.isGameOver);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        isGameOver
+        ? <EndgameMessage />
+        : <CropInput />
+      }
+      <CropList />
+      <Attributions />
     </div>
   );
+
 }
 
 export default App;

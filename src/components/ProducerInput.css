@@ -1,0 +1,17 @@
+.ProducerInput {
+    border: none;
+    border-bottom: 1px solid #f8f8f8;
+    background-color: #f8f8f8;
+    transition: background-color .25s, border-bottom .25s;
+}
+
+.ProducerInput:disabled {
+    color: inherit;
+    background-color: transparent;
+    border: none;
+}
+
+.ProducerInput:focus {
+    background-color: white;
+    border-bottom-color: orange;
+}

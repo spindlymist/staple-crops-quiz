@@ -1,0 +1,62 @@
+[
+    {
+        "rank": 1,
+        "crop": "Maize",
+        "match": "(corn|maize)",
+        "producer": "United States"
+    },
+    {
+        "rank": 2,
+        "crop": "Rice",
+        "match": "rice",
+        "producer": "China"
+    },
+    {
+        "rank": 3,
+        "crop": "Wheat",
+        "match": "wheat",
+        "producer": "China"
+    },
+    {
+        "rank": 4,
+        "crop": "Potatoes",
+        "match": "potato(es)?",
+        "producer": "China"
+    },
+    {
+        "rank": 5,
+        "crop": "Cassava",
+        "match": "(cassava|manioc|yuca)",
+        "producer": "Nigeria"
+    },
+    {
+        "rank": 6,
+        "crop": "Soybeans",
+        "match": "(soy ?beans?|soya beans?|soy)",
+        "producer": "United States"
+    },
+    {
+        "rank": 7,
+        "crop": "Sweet potatoes",
+        "match": "sweet ?potato(es)?",
+        "producer": "China"
+    },
+    {
+        "rank": 8,
+        "crop": "Yams",
+        "match": "yams?",
+        "producer": "Nigeria"
+    },
+    {
+        "rank": 9,
+        "crop": "Sorghum",
+        "match": "sorghum",
+        "producer": "United States"
+    },
+    {
+        "rank": 10,
+        "crop": "Plantains",
+        "match": "(plantains?|green bananas?)",
+        "producer": "Uganda"
+    }
+]
