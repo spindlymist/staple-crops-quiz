@@ -12,13 +12,21 @@ export const useCrops = create((set, get) => {
     return {
         crops,
         producersRevealedCount: 0,
+        cropsRevealedCount: 0,
+        isCropGuessingFinished: false,
         isGameOver: false,
         checkCrop: (value) => {
             const crops = get().crops;
             const match = crops.find(({ match }) => match.test(value));
             if(match) {
                 match.isCropRevealed = true;
-                set(state => state.crops = crops);
+                set(state => {
+                    state.crops = crops;
+                    state.cropsRevealedCount++;
+                    if(state.cropsRevealedCount === crops.length) {
+                        state.isCropGuessingFinished = true;
+                    }
+                });
                 return true;
             }
 
